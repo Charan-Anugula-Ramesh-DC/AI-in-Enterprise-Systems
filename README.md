@@ -1,3 +1,4 @@
+
 # Repository - AI-in-Enterprise-Systems
 
 Welcome to the repository for AI-in-Enterprise-Systems! This repository is dedicated to tracking and managing all assignments associated with AI-in-Enterprise-Systems.
@@ -10,5 +11,4 @@ This repository contains a series of labs designed to reinforce your understandi
 
 The repository is organized into the following main folder:
 
-- AI-in-Enterprise-Systems: Contains individual folders for each lab assignment.
-
+- **AI in Enterprise Systems**: Contains individual folders for each lab assignment.
