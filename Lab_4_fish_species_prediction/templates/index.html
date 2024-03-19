@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Weight Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Fish Weight Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Length1">Length1 (cm):</label>
+        <input type="text" id="Length1" name="Length1" required value="{{ length1 }}"><br><br>
+        
+        <label for="Length2">Length2 (cm):</label>
+        <input type="text" id="Length2" name="Length2" required value="{{ length2 }}"><br><br>
+        
+        <label for="Length3">Length3 (cm):</label>
+        <input type="text" id="Length3" name="Length3" required value="{{ length3 }}"><br><br>
+        
+        <label for="Height">Height (cm):</label>
+        <input type="text" id="Height" name="Height" required value="{{ height }}"><br><br>
+        
+        <label for="Width">Width (cm):</label>
+        <input type="text" id="Width" name="Width" required value="{{ width }}"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+    <div id="predictionResult">
+        {{ prediction_result }}
+        {{ accuracy }}
+    </div>
+</body>
+</html>
